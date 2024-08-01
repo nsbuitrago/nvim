@@ -23,9 +23,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
   spec = {
     'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+    'christoomey/vim-tmux-navigator', -- navigate between vim and tmux
     { import = 'plugins.config' },
   },
-  ui = { border = 'rounded' },
   performance = {
     rtp = {
       disabled_plugins = {

@@ -11,6 +11,7 @@ set('n', '<leader>fe', '<cmd>Oil<CR>', { desc = 'Open [F]ile [E]ditor' })
 
 -- Diagnostic keymaps
 set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
