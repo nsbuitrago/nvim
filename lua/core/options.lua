@@ -20,9 +20,12 @@ o.mouse = 'a'
 o.showmode = false
 
 -- Sync clipboard between OS and Neovim.
+--  NOTE: schedule the setting after `UIEnter` since it can increase start time.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-o.clipboard = 'unnamedplus'
+vim.schedule(function()
+  o.clipboard = 'unnamedplus'
+end)
 
 -- Enable break indent
 o.breakindent = true

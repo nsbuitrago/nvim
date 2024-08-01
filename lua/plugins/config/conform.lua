@@ -30,10 +30,10 @@ return { -- Autoformat
       python = { 'ruff', 'black', 'isort' },
       -- You can use a sub-list to tell conform to run *until* a formatter
       -- is found.
-      typescript = { { 'prettierd', 'prettier' } },
-      javascript = { { 'prettierd', 'prettier' } },
-      html = { { 'prettierd', 'prettier' } },
-      css = { { 'prettierd', 'prettier' } },
+      typescript = { 'prettierd', 'prettier', stop_after_first = true },
+      javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      html = { 'prettierd', 'prettier', stop_after_first = true },
+      css = { 'prettierd', 'prettier', stop_after_first = true },
     },
   },
 }
