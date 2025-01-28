@@ -34,3 +34,6 @@ set({ 'n', 'v' }, 'ge', '$', { desc = 'Move to last non-whitespace char' })
 set('n', '<leader>bn', ':bnext<CR>', { desc = 'Move to nth next [B]uffer' })
 set('n', '<leader>bp', ':bprev<CR>', { desc = 'Move to nth previous [B]uffer' })
 set('n', '<leader>bd', ':bdelete<CR>', { desc = 'Close [B]uffer' })
+
+-- format text to 80 characters per line
+set('v', '<leader>ft', '!fmt -w 80<CR>', { desc = 'Format text to 80 characters per line' })
