@@ -27,8 +27,8 @@ set('n', '<C-j>', ':SmartCursorMoveDown<CR>')
 set('n', '<C-k>', ':SmartCursorMoveUp<CR>')
 set('n', '<C-l>', ':SmartCursorMoveRight<CR>')
 -- Move to start and end of lines
-set({ 'n', 'v' }, 'gs', '^', { desc = 'Move to first non-whitespace character of the line' })
-set({ 'n', 'v' }, 'ge', '$', { desc = 'Move to last non-whitespace char' })
+set({ 'n', 'v' }, 'gh', '^', { desc = 'Move to first non-whitespace character of the line' })
+set({ 'n', 'v' }, 'gl', '$', { desc = 'Move to last non-whitespace char' })
 
 -- Buffer movement
 set('n', '<leader>bn', ':bnext<CR>', { desc = 'Move to nth next [B]uffer' })
